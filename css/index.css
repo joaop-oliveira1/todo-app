@@ -1,0 +1,20 @@
+:root{
+  --primary-green: #00BB65;
+  --primary-green-hover: #36eb97;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+  width: calc(100% - 25px);
+  max-width: 1100px;
+  margin: 0 auto;
+}

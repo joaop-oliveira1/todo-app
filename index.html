@@ -1,13 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/banner.css">
+  <title>Todo - App</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+</head>
+<body>
+
+  <header id="header">
+    <div class="container">
+      <div class="box-logo">
+        <img src="/img/todo-logo.png" alt="Logo Todo">
+      </div>
+
+      <nav class="menu-header">
+        <ul>
+          <li><a class="menu-option" href="#">Blog</a></li>
+          <li><a class="menu-option" href="#">Materiais Educativos</a></li>
+          <li><a class="menu-option" href="#">Sobre nós</a></li>
+          <li><a class="menu-option" href="#">Preços</a></li>
+          <li><a class="menu-option" href="#">Contato</a></li>
+          <li><a href="#">Entrar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-banner">
+      <div class="container">
+        <div class="banner-title">
+          <h1>O <strong>sistema de gestão</strong> ideal para empresas que precisam de um <strong>controle completo</strong></h1>
+
+          <h2>O QS é um sistema de gestão empresarial que otimiza seu tempo, garantindo mais segurança para os controles diários do seu negócio.</h2>
+        </div>
+
+        <div class="banner-trial">
+          <form action="">
+            <input type="email" id="email" name="email" placeholder="Seu email de trabalho">
+            <button type="submit">Teste grátis</button>
+          </form>
+
+          <small><strong>Sem riscos.</strong> Você não pagará nada caso não queria contratar. O teste grátis tem duração de 10 dias.</small>
+        </div>
+      </div>
+    </section>
+    <section class="section-banner">
+      <div class="container">
+        <div class="banner-title">
+          <h1>O <strong>sistema de gestão</strong> ideal para empresas que precisam de um <strong>controle completo</strong></h1>
+
+          <h2>O QS é um sistema de gestão empresarial que otimiza seu tempo, garantindo mais segurança para os controles diários do seu negócio.</h2>
+        </div>
+
+        <div class="banner-trial">
+          <form action="">
+            <input type="email" id="email" name="email" placeholder="Seu email de trabalho">
+            <button type="submit">Teste grátis</button>
+          </form>
+
+          <small><strong>Sem riscos.</strong> Você não pagará nada caso não queria contratar. O teste grátis tem duração de 10 dias.</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/js/header.js"></script>
+  
+</body>
 </html>

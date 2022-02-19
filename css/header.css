@@ -1,0 +1,90 @@
+header{
+    /* box-shadow: 0 -12px 20px black; */
+    padding: 15px 0;
+    background-color: transparent;
+    width: 100%;
+    position: fixed;
+    color: white;
+}
+
+.active-header{
+    background-color: white; 
+    box-shadow: 0 -12px 20px black;
+}
+
+header .menu-header li .active-menu-option{
+    color: black;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .box-logo{
+    width: 100%;
+    max-width: 60px;
+}
+
+header .container .box-logo img{
+    width: 100%;
+}
+
+header .menu-header{
+    width: 100%;
+    max-width: 620px;
+}
+
+header .menu-header ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+header .menu-header li{
+    list-style-type: none;
+}
+
+header .menu-header li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 600;
+}
+
+header .menu-header li a::after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    background-color: var(--primary-green);
+    width: 0;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.2s ease-in;
+}
+
+header .menu-header li a:hover::after{
+    content: '';
+    width: 100%;
+}
+
+header .menu-header li:last-child a:hover::after{
+    content: '';
+    width: 0;
+}
+
+header .menu-header li:last-child a{
+    background-color: var(--primary-green);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 3px;
+    transition: all ease-in 0.2s;
+}
+
+header .menu-header li:last-child a:hover{
+    background-color: #36eb97;
+}
