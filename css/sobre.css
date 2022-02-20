@@ -1,0 +1,63 @@
+.sobre-nos{
+    color: #747474;
+    font-weight: 300;
+}
+
+.titulo-sobre-nos{
+    display: flex;
+    align-items: center;
+}
+
+.titulo-sobre-nos h2{
+    font-size: 33px;
+    font-weight: 300;
+}
+.divisor-sobre-nos{
+    position: relative;
+    height: 6px;
+    flex-grow: 1;
+}
+
+.divisor-sobre-nos span{
+    border-color: #e0dede;
+    
+    height: 6px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+
+    display: block;
+    border-style: solid;
+    box-sizing: content-box;
+}
+
+.texto-sobre-nos p{
+    font-size: 16px;
+
+    margin: 40px 0 40px 0;
+}
+
+.detalhe-sobre-nos{
+    display: flex;
+    flex-direction: row;
+}
+
+.detalhe-sobre-nos iframe{
+    width: 50%;
+    margin: 0 50px 0 0;   
+}
+
+.detalhe-sobre-nos div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.detalhe-sobre-nos span{
+    display: inline-flex;
+}
+
+.detalhe-sobre-nos span p{
+    font-size: 14px;
+    margin: 0 0 0 33.6px;
+}
+
