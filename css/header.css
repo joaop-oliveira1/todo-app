@@ -21,7 +21,6 @@ header {
         backdrop-filter: blur( 4.5px );
         -webkit-backdrop-filter: blur( 4.5px );
         border-radius: 0 0 3px 3px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
 
     header[data-state="inactive"] {
