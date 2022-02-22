@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/banner.css">
   <link rel="stylesheet" href="/css/sobre.css">
+  <link rel="stylesheet" href="/css/contact.css">
   <title>Todo - App</title>
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
@@ -80,6 +81,29 @@
             de 10 dias.</small>
         </div>
       </div>
+    </section>
+    <section id="contact-section" class="contact-container">
+      <form id="contact-form" method="POST" class="contact-form" name="contact" netlify data-netlify-honeypot="trybot">
+
+        <div>
+          <label>Seu E-mail</label>
+          <input type="email" />
+        </div>
+
+
+        <div>
+          <label>Seu Nome</label>
+          <input type="name" />
+        </div>
+
+        <div>
+          <label>Sua Mensagem</label>
+          <textarea></textarea>
+        </div>
+
+
+        <button type="submit">Enviar</button>
+      </form>
     </section>
   </main>
 
@@ -178,6 +202,7 @@
   <!-- Final Sobre o Produto -->
 
   <script src="/js/header.js"></script>
+  <script src="/js/contact.js"></script>
 
 </body>
 

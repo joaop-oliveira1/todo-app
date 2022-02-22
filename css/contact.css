@@ -1,0 +1,19 @@
+.contact-container {
+    padding: 1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-form div {
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+.contact-form label {
+    display: block;
+}

@@ -2,7 +2,6 @@ var header = document.querySelector('#header');
 var menuOptions = document.querySelectorAll('.menu-option')
 
 window.addEventListener('scroll', function(){
-    console.log('Fired Scroll')
     try {
         if(window.scrollY > 100){
             addActiveClass(header, menuOptions);
