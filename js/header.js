@@ -2,6 +2,7 @@ var header = document.querySelector('#header');
 var menuOptions = document.querySelectorAll('.menu-option')
 
 window.addEventListener('scroll', function(){
+    console.log('Fired Scroll')
     try {
         if(window.scrollY > 100){
             addActiveClass(header, menuOptions);
@@ -14,17 +15,15 @@ window.addEventListener('scroll', function(){
 });
 
 function addActiveClass(header, menuOptions){
-    header.classList.add('active-header');
-
+    header.setAttribute('data-state', 'active');
     menuOptions.forEach(menuOption => {
         menuOption.classList.add('active-menu-option');
     });
 };
 
 function removeActiveClass(header, menuOptions){
-    header.classList.remove('active-header');
-
+    header.setAttribute('data-state', 'inactive');
     menuOptions.forEach(menuOption => {
-        menuOption.classList.remove('active-menu-option');
+        menuOption.setAttribute('data-state', 'active');
     });
 };

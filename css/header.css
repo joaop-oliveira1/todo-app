@@ -1,90 +1,131 @@
-header{
-    /* box-shadow: 0 -12px 20px black; */
-    padding: 15px 0;
-    background-color: transparent;
-    width: 100%;
-    position: fixed;
-    color: white;
+header {
+    display: none;
 }
 
-.active-header{
-    background-color: white; 
-    box-shadow: 0 -12px 20px black;
+/* Tablet Devices */
+@media screen and (min-width: 480px) {
+    header {
+        /* box-shadow: 0 -12px 20px black; */
+        display: block;
+        padding: 15px 0;
+        background-color: transparent;
+        width: 100%;
+        position: fixed;
+        color: white;
+        transition: all 150ms ease-in;
+    }
+
+    header[data-state="active"] {
+        background: rgba( 255, 255, 255, 0.85 );
+        box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
+        backdrop-filter: blur( 4.5px );
+        -webkit-backdrop-filter: blur( 4.5px );
+        border-radius: 0 0 3px 3px;
+    }
+
+    header[data-state="inactive"] {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    header[data-state="inactive"]  .menu-header li a {
+        color: white;
+    }
+
+    header[data-state="inactive"] .menu-header li a:visited {
+        color: white;
+    }
+
+    header[data-state="active"]  .menu-header li a {
+        color: #1e293b;
+    }
+
+
+    header[data-state="active"] > .menu-header li a:visited {
+        color: #1e293b;
+    }
+
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .container .box-logo {
+        width: 100%;
+        max-width: 60px;
+    }
+
+    header .container .box-logo img {
+        width: 100%;
+    }
+
+    header .menu-header {
+        width: 100%;
+        max-width: 620px;
+    }
+
+    header .menu-header ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+    }
+
+    header .menu-header li {
+        list-style-type: none;
+    }
+
+    header .menu-header li a {
+        text-decoration: none;
+        font-size: 1rem;
+        text-transform: capitalize;
+        position: relative;
+        font-weight: 600;
+    }
+
+    header .menu-header li a::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        background-color: var(--primary-green);
+        width: 0;
+        height: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.2s ease-in;
+    }
+
+    header .menu-header li a:hover::after {
+        content: '';
+        width: 100%;
+    }
+    .login-button {
+        background-color: var(--primary-green);
+        padding: 8px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all ease-in 0.2s;
+    }
+
+    header[data-state="active"] .menu-header ul .login-button li a {
+        color: white;
+    }
+
+    .login-button:hover {
+        background-color: #36eb97;
+    }
+
+    .login-button:hover::after {
+        content: '';
+        width: 0;
+    }
 }
 
-header .menu-header li .active-menu-option{
-    color: black;
+/* Small Screen Devices like laptops */
+@media screen and (min-width: 768px) {
 }
 
-header .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header .container .box-logo{
-    width: 100%;
-    max-width: 60px;
-}
-
-header .container .box-logo img{
-    width: 100%;
-}
-
-header .menu-header{
-    width: 100%;
-    max-width: 620px;
-}
-
-header .menu-header ul{
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-}
-
-header .menu-header li{
-    list-style-type: none;
-}
-
-header .menu-header li a{
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    text-transform: uppercase;
-    position: relative;
-    font-weight: 600;
-}
-
-header .menu-header li a::after{
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    background-color: var(--primary-green);
-    width: 0;
-    height: 2px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: 0.2s ease-in;
-}
-
-header .menu-header li a:hover::after{
-    content: '';
-    width: 100%;
-}
-
-header .menu-header li:last-child a:hover::after{
-    content: '';
-    width: 0;
-}
-
-header .menu-header li:last-child a{
-    background-color: var(--primary-green);
-    color: white;
-    padding: 8px 20px;
-    border-radius: 3px;
-    transition: all ease-in 0.2s;
-}
-
-header .menu-header li:last-child a:hover{
-    background-color: #36eb97;
+/* For Big Screens */
+@media screen and (min-width: 1024px) {
 }
