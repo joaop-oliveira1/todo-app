@@ -10,8 +10,9 @@
 }
 
 .titulo-sobre-nos h2{
-    font-size: 1.8rem;
-    font-weight: 300;
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: black;
 }
 .divisor-sobre-nos{
     position: relative;
@@ -68,7 +69,14 @@
 
 .detalhe-sobre-nos span p{
     font-size: 0.9rem;
-    margin: 0 0 0 33.6px;
+    margin: 0.2rem 0 0 1rem;
+}
+
+.detalhe-sobre-nos span i{
+    background-color: #7aba7a;
+    padding: 7px;
+    border-radius: 33px;
+    color: white;
 }
 
 @media(max-width: 720px){
@@ -136,7 +144,7 @@
     }   
 }
 .sobre-nos-box-detalhe{
-    border: 1px solid #f6f6f6;
+    border: 1px solid #e0dede;
     padding: 1.2rem;
     text-align: center;
     margin: 0.9rem 1rem 0.9rem 0;
@@ -146,6 +154,10 @@
     color: #7aba7a;
     font-size: 2.5rem;
     padding-bottom: 0.5rem;
+}
+
+.sobre-nos-box-detalhe i b{
+    padding-left: 0.8rem;
 }
 
 .sobre-nos-box-detalhe p{
