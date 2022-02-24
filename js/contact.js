@@ -12,7 +12,6 @@ const state = {
 contactForm.addEventListener('submit', async function handleContactSubmit(event) {
     event.preventDefault();
     mutateAllToLoading()
-    await wait(5);
     var formData = new FormData(contactForm);
     await sendContactForm(formData)
     mutateAllToNormal();
