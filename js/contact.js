@@ -14,6 +14,7 @@ contactForm.addEventListener('submit', async function handleContactSubmit(event)
     mutateAllToLoading()
     var formData = new FormData();
     var values = getAllTextFieldValues();
+    formData.append('form-name', 'contact');
     values.forEach(function appendToFormData(payload) {
         formData.append(payload.key, payload.value)
     })
