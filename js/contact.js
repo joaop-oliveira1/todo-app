@@ -12,10 +12,32 @@ const state = {
 contactForm.addEventListener('submit', async function handleContactSubmit(event) {
     event.preventDefault();
     mutateAllToLoading()
-    var formData = new FormData(contactForm);
+    var formData = new FormData();
+    var values = getAllTextFieldValues();
+    values.forEach(function appendToFormData(payload) {
+        formData.append(payload.key, payload.value)
+    })
     await sendContactForm(formData)
     mutateAllToNormal();
 })
+
+function getAllTextFieldValues() {
+    const fieldNames = Object.keys(state.form)
+        .filter(function filterButton(fieldName) {
+            // fieldName => fieldName !== 'button'
+            return fieldName !== 'button'
+        });
+    return fieldNames.map(function mapThroughValues(fieldName) {
+        return {
+            key: fieldName,
+            value: getTextFieldValue(fieldName)
+        };
+    })
+}
+
+function getTextFieldValue(name) {
+    return state.form[name].value
+}
 
 function mutate(key, value) {
     state[key] = value;
@@ -56,7 +78,7 @@ function wait(time) {
 async function sendContactForm(formData) {
     await fetch("/", {
         method: 'POST',
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
         body: new URLSearchParams(formData).toString()
     })
 }
