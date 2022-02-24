@@ -10,7 +10,7 @@
 }
 
 .titulo-sobre-nos h2{
-    font-size: 33px;
+    font-size: 1.8rem;
     font-weight: 300;
 }
 .divisor-sobre-nos{
@@ -32,14 +32,14 @@
 }
 
 .texto-sobre-nos p{
-    font-size: 16px;
+    font-size: 0.9rem;
 
-    margin: 40px 0 40px 0;
+    margin: 2rem 0 2rem 0;
 }
 
 @media(max-width:720px){
     .texto-sobre-nos p{
-        margin: 40px;
+        margin: 2rem;
         text-align: center;
     }
 }
@@ -47,13 +47,13 @@
 .detalhe-sobre-nos{
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .detalhe-sobre-nos iframe{
-    width: 100%;
+    width: 50%;
     height: 380px;
-    margin: 0 50px 0 0;   
+    margin: 0 2rem 0 0;   
 }
 
 .detalhe-sobre-nos div{
@@ -67,7 +67,7 @@
 }
 
 .detalhe-sobre-nos span p{
-    font-size: 14px;
+    font-size: 0.9rem;
     margin: 0 0 0 33.6px;
 }
 
@@ -85,15 +85,15 @@
 
     .detalhe-sobre-nos div{
         width: 75%;
-        margin-top: 20px;
+        margin-top: 2rem;
     }   
 
     .detalhe-sobre-nos div span{
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
     }   
 
     .detalhe-sobre-nos span p{
-        margin: 0 0 0 20px;
+        margin: 0 0 0 1rem;
     }
 }
 
@@ -103,7 +103,7 @@
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .sobre-nos-box button{
@@ -121,7 +121,7 @@
 }
 
 .sobre-nos-box button i{
-    margin-right: 5px;
+    margin-right: 0.2rem;
 }
 
 .sobre-nos-divisor{
@@ -137,18 +137,18 @@
 }
 .sobre-nos-box-detalhe{
     border: 1px solid #f6f6f6;
-    padding: 20px;
+    padding: 1.2rem;
     text-align: center;
-    margin: 14px 15px 14px 0;
+    margin: 0.9rem 1rem 0.9rem 0;
 }
 
 .sobre-nos-box-detalhe i{
     color: #7aba7a;
-    font-size: 50px;
-    padding-bottom: 10px;
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .sobre-nos-box-detalhe p{
     color: #747474;
-    font-size: 14px;
+    font-size: 0.8rem;
 }
