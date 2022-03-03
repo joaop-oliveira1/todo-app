@@ -1,25 +1,35 @@
+
 .contact-container {
     padding: 1rem;
 }
 
 .contact-form {
-    width: 100%;
+    padding: 2.5rem 5rem;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
+    flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
+}
+
+.fields-section {
+    width: 100%;
+    /*padding: 0 0 0 0;*/
+    /*display: flex;*/
+    /*flex-flow: column nowrap;*/
+    /*justify-content: flex-start;*/
+    /*align-items: center;*/
 }
 
 .contact-form[data-state="loading"] {
     cursor: wait;
 }
 
-.contact-form div {
+.form-group {
     width: 100%;
     margin: .5rem auto;
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -66,7 +76,7 @@
     box-shadow: 0 0 0 2px var(--primary-green);
 }
 
-.contact-form button {
+.fields-section button {
     width: 50%;
     padding: .75rem .5rem;
     border: 1px solid var(--primary-green);
@@ -78,18 +88,18 @@
     transition: all ease-in 150ms;
 }
 
-.contact-form button[data-state="loading"] {
+.fields-section button[data-state="loading"] {
     background-color: var(--primary-green-hover);
     border: 1px solid var(--primary-green-hover);
     cursor: wait;
 }
 
-.contact-form button:hover {
+.fields-section button:hover {
     background-color: var(--primary-green-hover);
     border: 1px solid var(--primary-green-hover);
 }
 
-.contact-form button[data-state="loading"]:hover {
+.fields-section button[data-state="loading"]:hover {
     background-color: var(--primary-green-hover);
     border: 1px solid var(--primary-green-hover);
     cursor: wait;

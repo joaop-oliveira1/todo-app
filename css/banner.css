@@ -1,8 +1,11 @@
 .section-banner{
-    padding: 150px 0 100px;
+    padding: 10rem 5rem;
     background-color: #388e77;
     background: linear-gradient(110deg, #388e77, #568e5b);
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .section-banner .banner-title{
