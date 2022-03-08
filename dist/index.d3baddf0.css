@@ -1,0 +1,68 @@
+.section-banner{
+    padding: 10rem 5rem;
+    background-color: #388e77;
+    background: linear-gradient(110deg, #388e77, #568e5b);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-banner .banner-title{
+    width: 100%;
+    max-width: 575px;
+}
+
+.section-banner .banner-trial {
+    width: 100%;
+    max-width: 600px;
+}
+
+.section-banner .banner-title h1{
+    font-size: 3.125rem;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.section-banner .banner-title h2{
+    font-size: 1.625rem;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.section-banner .banner-trial form{
+    width: 100%;
+    max-width: 535px;
+    display: flex;
+    align-items: center;
+    padding: 1px;
+}
+
+.section-banner .banner-trial form input{
+    color: rgb(170, 169, 169);
+    width: 330px;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid var(--primary-green);
+    border-right: none;
+}
+
+.section-banner .banner-trial form button{
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--primary-green);
+    border: none;
+
+    margin: 0 auto;
+    cursor: pointer;
+    height: 40px;
+    width: 203px;
+}
+
+.section-banner .banner-trial form button:hover{
+    background-color: var(--primary-green-hover);
+}
+/*# sourceMappingURL=index.d3baddf0.css.map */

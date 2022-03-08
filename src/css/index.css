@@ -1,0 +1,41 @@
+:root{
+  --primary-green: #00BB65;
+  --primary-green-hover: #36eb97;
+  --sm: .375rem;
+  --md: .5rem;
+  --lg: .75rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e293b;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 0 calc(100vw / 12);
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+/* Tablet Devices */
+@media screen and (min-width: 480px) {
+}
+
+/* Small Screen Devices like laptops */
+@media screen and (min-width: 768px) {
+}
+
+/* For Big Screens */
+@media screen and (min-width: 1024px) {
+}
